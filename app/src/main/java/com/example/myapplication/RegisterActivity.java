@@ -35,7 +35,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void onClick(View view){
-
+//check if fields are empty or outside character requirements
 
         if(firstName.getText().toString().trim().isEmpty() || firstName.getText().toString().length() < 3 || firstName.getText().toString().length() > 30){
             firstName.setBackgroundColor(Color.RED);
@@ -59,6 +59,7 @@ public class RegisterActivity extends AppCompatActivity {
             return;
         }
         else {
+            //switch back to home activity
             Intent i = new Intent(this, HomeActivity.class);
             startActivity(i);
         }

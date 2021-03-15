@@ -24,7 +24,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void onClick(View view){
-
+//check to see if fields are empty otherwise switch to register when clicked
         if(loginEmail.getText().toString().trim().isEmpty()){
             loginEmail.setBackgroundColor(Color.RED);
 
