@@ -24,21 +24,10 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void onClick(View view){
-//check to see if fields are empty otherwise switch to register when clicked
-        if(loginEmail.getText().toString().trim().isEmpty()){
-            loginEmail.setBackgroundColor(Color.RED);
+//switch to register activity when clicked
 
-            return;
-        }
-
-        else if(loginPassword.getText().toString().trim().isEmpty()) {
-            loginPassword.setBackgroundColor(Color.RED);
-
-            return;
-        }
-        else {
             Intent i = new Intent(this, RegisterActivity.class);
             startActivity(i);
-        }
+
     }
 }
