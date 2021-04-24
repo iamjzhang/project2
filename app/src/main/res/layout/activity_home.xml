@@ -51,7 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/loginEmail" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -68,13 +68,13 @@
         android:layout_marginTop="16dp"
         android:text="Don't Have An Account?"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/button_login"
+        app:layout_constraintStart_toStartOf="@+id/button_login"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/button_login" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_register"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -83,6 +83,6 @@
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        android:onClick="onClick"/>
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
